@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: q6e0xfeql-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: q6e0xfeql-python 
+  name: q6e0xfeql-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: q6e0xfeql-python 
